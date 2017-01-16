@@ -1,0 +1,255 @@
+/* By Karola Kirsanow, modified from
+ * Author: Carlos Alvarez
+ * URL: http://Alvarez.is
+ *
+ * Project Name: NYC Design
+ * Version: 1.0
+ * Date: 04-20-2014
+ * URL:
+and Levent Evmek @ codepen.io
+ */
+
+
+/* ==========================================================================
+   Base Styles, Bootstrap Modifications & Fonts Import
+   ========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700,400italic|Montserrat:400,700|Cardo:400italic|Advent+Pro:100)
+
+::-moz-selection {
+    background: #f2c2c9;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+::selection {
+    background: #16a085;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.centered {
+    text-align: center
+}
+
+.mt {
+    margin-top: 80px;
+}
+
+.mb {
+    margin-bottom: 80px;
+}
+
+
+
+
+
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+
+
+body {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+    color: #4a4a4a;
+}
+
+
+
+.content-block { min-height: 50vh; padding-top: 30px; padding-bottom: 20px; }
+display: inline-block; }
+.content-block h1 { color: #9C9C9C; font-weight: 400; font-size: 30px; display: inline-block; }
+.content-block h1:after { content: ''; display: block; border-bottom: 1px solid #DFDFDF; padding-top: 3px; }
+.content-block p.lead { font-family: 'Cardo', serif; font-size: 19px; line-height: 1.35em; margin-bottom: 0px; }
+.content-block p.lead em { font-size: 19px; }
+.content-block p em { font-size: 14px;}
+.content-block p mark em { font-size: inherit;}
+.content-block img.pull-right { border:1px solid #DFDFDF; margin-top: 100px;  }
+.content-block img.pull-left { border:1px solid #DFDFDF; margin-top: 50px; max-width: 100% }
+/*.content-block div {
+    display:table;
+  
+}
+.content-block span {
+    vertical-align: middle;
+    display: table-cell;
+    padding-left:30px;
+}*/
+
+/*@media screen and (min-width: 768px) {
+  #home h1 { font-size: 120px; line-height: 114px; }
+  #home h5 { font-size: 19px; }
+}
+
+@media screen and (min-width: 992px) {
+  #home h1 { font-size: 132px; margin-top: 70px; }
+  #home h5 { font-size: 21px; }
+}
+
+@media screen and (min-width: 1200px) {
+  #home h1 { font-size: 142px; line-height: 124px; }
+  #home h5 { font-size: 24px; }
+}*/
+
+
+
+/*--- NAVBAR ---*/
+.navbar-default { font-family: 'Montserrat', serif; background: #FFFFFF; border-bottom-color: #DFDFDF; height: 60px; margin-bottom: 0; }
+.navbar-header .navbar-toggle { margin-top: 12px; }
+.navbar-header .navbar-brand { letter-spacing: -0.03em; height: 60px; padding: 30px 10px 0 10px; font-size: 36px; line-height: 0px; font-weight: 700; color: #111; white-space: nowrap; }
+.navbar-default .navbar-brand:focus { color: #111; }
+.navbar-default .navbar-nav { background: #FFF; margin-top: 0; }
+.navbar-default .navbar-nav>li>a { color: #222; padding: 10px; border-bottom: 1px solid #DFDFDF; }
+.navbar-default .navbar-nav>li>a.selected { color: #E64B36; }
+.navbar-default a.navbar-brand:hover .navbar-default .navbar-nav>li>a:hover { background-color: #DFDFDF; }
+.navbar-default .navbar-brand:hover { color: #E64B36; }
+
+/*@media screen and (min-width: 768px) {
+  .navbar-default { height: 100px; }
+  .navbar-header { width: 100%; }
+  .navbar-header .navbar-brand { height: 70px; padding: 40px 0 0 15px; font-size: 42px; }
+  .navbar-default .navbar-nav>li>a { padding: 0px 20px 9px 0; }
+  .navbar-default .navbar-nav>li>a:hover { background-color: transparent; color: #E64B36; }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-default { height: 120px; }
+  .navbar-header .navbar-brand { height: 80px; padding: 45px 0 0 15px; font-size: 48px; }
+  .navbar-default .navbar-nav>li>a { padding: 10px 25px 9px 0; }
+}*/
+
+
+*--- HOME ---*/
+#home {
+  background: url(../img/lego.jpg) no-repeat center center fixed;
+  background-size: cover; text-shadow: 1px 1px 0 rgba(255,255,255,0.5); text-align: center;
+}
+#home h1 { 
+    font-family: 'Montserrat', sans-serif; font-size: 96px; color: #000; display: inline-block; margin: 0; padding: 0; line-height: 90px; margin-top: 60px; 
+}
+#home h1:after {
+    border-bottom: 1px solid #AAA;  
+}
+#home h5 { 
+    font-size: 16px; color: #555;
+}
+
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+#headerwrap {
+    background: url(../img/freqmap_shot04.png) no-repeat center top;
+    margin-top: -70px;
+    padding-top: 250px;
+    text-align:center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 650px;
+    width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerwrap h1 {
+    font-family: 'Montserrat', sans-serif;
+    color:#f2f2f2;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    letter-spacing: 4px;
+    font-size: 80px;
+    font-weight: bold;
+    text-shadow: 2px 2px 0 rgba(255,255,255,0.5);
+}
+
+#headerwrap h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #f2f2f2;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
+        
+}
+
+#social {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background-color: #f2f2f2;
+}
+
+#social i {
+    font-size: 40px;
+    color: #4a4a4a
+}
+
+#social i:hover {
+    color: #1abc9c
+}
+
+/*#footerwrap {
+    background: url(../img/lego_grey.jpg) no-repeat top center fixed;
+    
+    padding-top: 50px;
+    padding-bottom: 400px;
+       
+    
+}
+
+#footerwrap p {
+    color: #ff6263;
+    margin-left: 10px;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
+}*/
+
+#footerwrap {
+	padding-top: 70px;
+	padding-bottom: 300px;
+	background: url(../img/lego_f2f2_notext.jpg) no-repeat top center;
+}
+
+#footerwrap p {
+	color: #f2f2f2;
+	margin-left: 10px;
+
+/* Gallery */
+.gallery {
+    margin-top: 30px;
+}
+
+.gallery img:hover {
+    opacity: 0.4;
+}
