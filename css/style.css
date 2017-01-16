@@ -81,8 +81,10 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-.content-block { min-height: 50vh; padding-top: 30px; padding-bottom: 20px; }
-display: inline-block; }
+.content-block { 
+min-height: 50vh; padding-top: 30px; padding-bottom: 20px; 
+display: inline-block; 
+}
 .content-block h1 { color: #9C9C9C; font-weight: 400; font-size: 30px; display: inline-block; }
 .content-block h1:after { content: ''; display: block; border-bottom: 1px solid #DFDFDF; padding-top: 3px; }
 .content-block p.lead { font-family: 'Cardo', serif; font-size: 19px; line-height: 1.35em; margin-bottom: 0px; }
@@ -91,30 +93,6 @@ display: inline-block; }
 .content-block p mark em { font-size: inherit;}
 .content-block img.pull-right { border:1px solid #DFDFDF; margin-top: 100px;  }
 .content-block img.pull-left { border:1px solid #DFDFDF; margin-top: 50px; max-width: 100% }
-/*.content-block div {
-    display:table;
-  
-}
-.content-block span {
-    vertical-align: middle;
-    display: table-cell;
-    padding-left:30px;
-}*/
-
-/*@media screen and (min-width: 768px) {
-  #home h1 { font-size: 120px; line-height: 114px; }
-  #home h5 { font-size: 19px; }
-}
-
-@media screen and (min-width: 992px) {
-  #home h1 { font-size: 132px; margin-top: 70px; }
-  #home h5 { font-size: 21px; }
-}
-
-@media screen and (min-width: 1200px) {
-  #home h1 { font-size: 142px; line-height: 124px; }
-  #home h5 { font-size: 24px; }
-}*/
 
 
 
@@ -128,21 +106,6 @@ display: inline-block; }
 .navbar-default .navbar-nav>li>a.selected { color: #E64B36; }
 .navbar-default a.navbar-brand:hover .navbar-default .navbar-nav>li>a:hover { background-color: #DFDFDF; }
 .navbar-default .navbar-brand:hover { color: #E64B36; }
-
-/*@media screen and (min-width: 768px) {
-  .navbar-default { height: 100px; }
-  .navbar-header { width: 100%; }
-  .navbar-header .navbar-brand { height: 70px; padding: 40px 0 0 15px; font-size: 42px; }
-  .navbar-default .navbar-nav>li>a { padding: 0px 20px 9px 0; }
-  .navbar-default .navbar-nav>li>a:hover { background-color: transparent; color: #E64B36; }
-}
-
-@media screen and (min-width: 992px) {
-  .navbar-default { height: 120px; }
-  .navbar-header .navbar-brand { height: 80px; padding: 45px 0 0 15px; font-size: 48px; }
-  .navbar-default .navbar-nav>li>a { padding: 10px 25px 9px 0; }
-}*/
-
 
 *--- HOME ---*/
 #home {
