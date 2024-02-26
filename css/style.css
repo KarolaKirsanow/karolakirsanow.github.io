@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .content-block { 
-min-height: 50vh; padding-top: 30px; padding-bottom: 20px; 
+min-height: 20vh; padding-top: 30px; padding-bottom: 10px; 
 display: inline-block; 
 }
 .content-block h1 { color: #9C9C9C; font-weight: 400; font-size: 30px; display: inline-block; }
@@ -126,6 +126,28 @@ display: inline-block;
 /* ==========================================================================
    Wrap Sections
    ========================================================================== */
+
+   #headerwrap-index {
+    background: url(../img/super-landscape-header-01.png) no-repeat center top;
+    margin-top: -70px;
+    padding-top: 250px;
+    text-align:center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 650px;
+    width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 
 #headerwrap {
     background: url(../img/freqmap_shot04.png) no-repeat center top;
@@ -204,15 +226,37 @@ display: inline-block;
 	background: url(../img/lego_f2f2_notext.jpg) no-repeat top center;
 }
 
+#footerwrap-index {
+	padding-top: 70px;
+	padding-bottom: 300px;
+	background: url(../img/super-landscape-footer02.png) no-repeat top center;
+    background-size: 100% 100%;
+}
+
 #footerwrap p {
 	color: #f2f2f2;
 	margin-left: 10px;
-
-/* Gallery */
-.gallery {
-    margin-top: 30px;
 }
 
-.gallery img:hover {
-    opacity: 0.4;
+/* Additional styles for equally sized book cover images */
+
+.book-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+    grid-gap: 20px; /* Gap between grid items */
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book img {
+    width: 100%; /* Ensure cover images fill their container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.book-details {
+    text-align: center;
 }
